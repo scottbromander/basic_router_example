@@ -1,0 +1,16 @@
+$(document).ready(function(){
+    $.ajax({
+        type:"GET",
+        url:"/example/cat",
+        success:function(response){
+          console.log(response);
+        }
+    });
+    $.ajax({
+        type:"GET",
+        url:"/example/dog",
+        success:function(response){
+          console.log(response);
+        }
+    });
+});
